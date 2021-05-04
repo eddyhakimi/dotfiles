@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
 # fancier prompt
-PS1='\[\e[1;32m\][\[\e[1;36m\]\u@\h\[\e[m\]\[\e[1;32m\] \D{%r}]\$ \[\e[m\]' 
+PS1='\[\e[1;32m\][\[\e[1;36m\]\u@\h\[\e[m\]\[\e[1;32m\] \w ]\$ \[\e[m\]' 
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
