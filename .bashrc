@@ -14,9 +14,13 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 # aliases for common used commands
+alias grep='grep --color=auto'
+alias up='cd ..'
 alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias ga='git add .'
 alias gs='git status'
 alias gc='git commit'
+alias gp='git push'
 alias v='vim'
+alias cb='xclip -selection clipboard'
