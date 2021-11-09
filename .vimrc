@@ -88,3 +88,12 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Insert 4 spaces whenever tab key is pressed
 set tabstop=4 shiftwidth=4 expandtab
+
+" Default recommended setting for synstic plugin
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
