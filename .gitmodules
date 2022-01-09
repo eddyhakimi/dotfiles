@@ -1,3 +1,6 @@
 [submodule ".vim/pack/vendor/start/ale"]
 	path = .vim/pack/vendor/start/ale
 	url = https://github.com/dense-analysis/ale
+[submodule ".vim/pack/vendor/start/vim-surround"]
+	path = .vim/pack/vendor/start/vim-surround
+	url = https://github.com/tpope/vim-surround
