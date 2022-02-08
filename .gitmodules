@@ -9,3 +9,6 @@
 	path = .vim/pack/vendor/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
 	branch = master
+[submodule ".vim/pack/vendor/start/emmet-vim"]
+	path = .vim/pack/vendor/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
