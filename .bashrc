@@ -29,3 +29,6 @@ alias gla='git log --graph --oneline --all'
 alias gf='git fetch'
 alias gps='git push'
 alias gpl='git pull'
+
+# set the keybindings to vi mode
+set -o vi
