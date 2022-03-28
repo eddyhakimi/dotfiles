@@ -86,6 +86,12 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Enable movement between split panes through alt-hjkl
+nnoremap h h
+nnoremap j j
+nnoremap k k
+nnoremap l l
+
 " Insert 4 spaces whenever tab key is pressed
 set tabstop=4 shiftwidth=4 expandtab
 
