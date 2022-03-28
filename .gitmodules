@@ -21,3 +21,6 @@
 [submodule ".vim/pack/vendor/start/nerdtree"]
 	path = .vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree
+[submodule ".vim/pack/vendor/start/tagbar"]
+	path = .vim/pack/vendor/start/tagbar
+	url = git@github.com:preservim/tagbar.git
