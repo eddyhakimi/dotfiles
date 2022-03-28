@@ -89,5 +89,10 @@ let g:ctrlp_cmd = 'CtrlP'
 " Insert 4 spaces whenever tab key is pressed
 set tabstop=4 shiftwidth=4 expandtab
 
+"##############################
+"# ALE keymaps
+"##############################
+" Enable Go to definition of ALE
+nmap <F1> <Plug>(ale_go_to_definition)
 " Enable jumping through  linted errors of ALE
-nmap <silent> <C-e> <Plug>(ale_next_wrap)
+nmap <F8> <Plug>(ale_next_wrap)
