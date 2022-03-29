@@ -92,13 +92,24 @@ nnoremap j j
 nnoremap k k
 nnoremap l l
 
-" Insert 4 spaces whenever tab key is pressed
-set tabstop=4 shiftwidth=4 expandtab
+" Insert 2 spaces whenever tab key is pressed
+set tabstop=2 shiftwidth=2 expandtab
+
+" Set leader key to space
+map <Space> <Nop>
+let mapleader = "\<Space>"
 
 "##############################
 "# ALE keymaps
 "##############################
 " Enable Go to definition of ALE
-nmap <F1> <Plug>(ale_go_to_definition)
+nmap <leader>g <Plug>(ale_go_to_definition)
 " Enable jumping through  linted errors of ALE
 nmap <F8> <Plug>(ale_next_wrap)
+
+
+"##############################
+"# Prettier
+"##############################
+" Add keymap to format document
+nnoremap <leader>f :Prettier<CR>
