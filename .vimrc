@@ -82,6 +82,9 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" Copy current indentation on new lines
+set autoindent
+
 " Enable invocation of ctrlP plugin direcly through ^P keystroke
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -97,7 +100,7 @@ set tabstop=2 shiftwidth=2 expandtab
 
 " Set leader key to space
 map <Space> <Nop>
-let mapleader = "\<Space>"
+let mapleader = " "
 
 "##############################
 "# ALE keymaps
