@@ -24,3 +24,7 @@
 [submodule ".vim/pack/vendor/start/tagbar"]
 	path = .vim/pack/vendor/start/tagbar
 	url = git@github.com:preservim/tagbar.git
+[submodule ".vim/pack/coc/start/coc.nvim"]
+	path = .vim/pack/coc/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
