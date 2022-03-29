@@ -1,10 +1,6 @@
 [submodule ".vim/pack/vendor/start/ale"]
 	path = .vim/pack/vendor/start/ale
 	url = https://github.com/dense-analysis/ale
-[submodule ".vim/pack/vendor/start/YouCompleteMe"]
-	path = .vim/pack/vendor/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
-	branch = master
 [submodule ".vim/pack/vendor/start/vim-prettier"]
 	path = .vim/pack/vendor/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
