@@ -1,1 +1,0 @@
-/home/gandalf21/dotfiles/.vim

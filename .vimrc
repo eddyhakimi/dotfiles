@@ -107,9 +107,20 @@ nmap <leader>g <Plug>(ale_go_to_definition)
 " Enable jumping through  linted errors of ALE
 nmap <F8> <Plug>(ale_next_wrap)
 
-
 "##############################
 "# Prettier
 "##############################
 " Add keymap to format document
 nnoremap <leader>f :Prettier<CR>
+
+"##############################
+"# NerdTree
+"##############################
+" Add keymap to toggle NerdTree
+nnoremap <F1> :NERDTreeToggle<CR>
+
+"##############################
+"# Tagbar
+"##############################
+" Add keymap to toggle tagbar
+nnoremap <F2> :TagbarToggle<CR>

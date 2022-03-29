@@ -11,5 +11,3 @@ ln -s "$SCRIPT_DIR/.vimrc" ~/.vimrc
 
 # install the vim plugins
 git submodule update --init --recursive
-python3 "$YCM_INSTALL_SCRIPT" --all
-
