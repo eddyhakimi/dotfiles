@@ -24,3 +24,9 @@
 	path = .vim/pack/coc/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
+[submodule ".vim/pack/vim-javascript/start/vim-javascript"]
+	path = .vim/pack/vim-javascript/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule ".vim/pack/vim-jsx-pretty/vim-jsx-pretty"]
+	path = .vim/pack/vim-jsx-pretty/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
