@@ -83,7 +83,7 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " Copy current indentation on new lines
-"set autoindent
+set autoindent
 
 " Enable movement between split panes through alt-hjkl
 nnoremap h h
@@ -97,6 +97,9 @@ set tabstop=2 shiftwidth=2 expandtab
 " Set leader key to space
 map <Space> <Nop>
 let mapleader = " "
+
+" Press Enter to jump in to help subject
+autocmd FileType help nnoremap <buffer> <CR> <C-]>
 
 "##############################
 "# ALE keymaps
