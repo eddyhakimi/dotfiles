@@ -30,3 +30,6 @@
 [submodule ".vim/pack/vim-jsx-pretty/vim-jsx-pretty"]
 	path = .vim/pack/vim-jsx-pretty/vim-jsx-pretty
 	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/pack/vim-snippets"]
+	path = .vim/pack/vim-snippets
+	url = git@github.com:honza/vim-snippets.git

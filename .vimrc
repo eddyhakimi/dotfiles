@@ -98,6 +98,9 @@ set tabstop=2 shiftwidth=2 expandtab
 map <Space> <Nop>
 let mapleader = " "
 
+" Press Enter to jump in to help subject
+autocmd FileType help nnoremap <buffer> <CR> <C-]>
+
 "##############################
 "# ALE keymaps
 "##############################
@@ -287,7 +290,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+"nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
