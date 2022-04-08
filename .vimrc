@@ -83,7 +83,7 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " Copy current indentation on new lines
-"set autoindent
+set autoindent
 
 " Enable movement between split panes through alt-hjkl
 nnoremap h h

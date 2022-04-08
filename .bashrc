@@ -1,5 +1,8 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+# add dotfiles bin directory to path env variable
+PATH="$PATH:~/dotfiles/bin"
+
 # fancier prompt
 PS1='\[\e[1;32m\][\[\e[1;36m\]\u@\h\[\e[m\]\[\e[1;32m\] \w ]\$ \[\e[m\]' 
 

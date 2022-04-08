@@ -1,0 +1,18 @@
+#!/bin/sh
+cd ~/Projects/spogario
+tmux new-session -d -s 'spogario-dev'
+tmux rename-window 'exec'
+tmux split-window -h
+tmux new-window -n 'git'
+tmux new-window -n 'frontend'
+tmux new-window -n 'backend'
+tmux new-window -n 'dotfiles'
+
+tmux select-window -t exec
+tmux send-keys 'cd backend' Enter 'npm i' Enter 'npm run nodemon' Enter
+tmux select-pane -L
+tmux send-keys 'cd frontend' Enter 'npm i' Enter 'npm start' Enter
+tmux send-keys -t frontend 'cd frontend' Enter 'v src/App.js' Enter
+tmux send-keys -t backend 'cd backend' Enter 'v app.js' Enter
+tmux send-keys -t dotfiles 'cd ~/dotfiles' Enter
+tmux -2 attach-session -d -t 'spogario-dev'
