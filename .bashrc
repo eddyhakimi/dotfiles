@@ -20,7 +20,7 @@ HISTFILESIZE=2000
 alias grep='grep --color=auto'
 alias up='cd ..'
 alias ls='ls --color=auto'
-alias ll='ls -lah'
+alias ll='ls -lahF --color'
 alias v='vim'
 alias cb='xclip -selection clipboard'
 alias gs='git status'
@@ -35,3 +35,12 @@ alias gpl='git pull'
 
 # set the keybindings to vi mode
 set -o vi
+
+# activate git autocompletion
+source /usr/share/bash-completion/completions/git
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
