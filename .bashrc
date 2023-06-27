@@ -40,9 +40,11 @@ set -o vi
 source /usr/share/bash-completion/completions/git
 
 # add local bashrc file
-LOCAL_BASHRC="~/dotfiles/.bashrc.local"
+LOCAL_BASHRC="$HOME/dotfiles/.bashrc.local"
 if [ -f "$LOCAL_BASHRC" ]; then
   source $LOCAL_BASHRC
+else
+  echo "No local bashrc file found"
 fi
 
 # pyenv
