@@ -43,8 +43,6 @@ source /usr/share/bash-completion/completions/git
 LOCAL_BASHRC="$HOME/dotfiles/.bashrc.local"
 if [ -f "$LOCAL_BASHRC" ]; then
   source $LOCAL_BASHRC
-else
-  echo "No local bashrc file found"
 fi
 
 # pyenv
