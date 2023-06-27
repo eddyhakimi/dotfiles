@@ -39,6 +39,12 @@ set -o vi
 # activate git autocompletion
 source /usr/share/bash-completion/completions/git
 
+# add local bashrc file
+LOCAL_BASHRC="~/dotfiles/.bashrc.local"
+if [ -f "$LOCAL_BASHRC" ]; then
+  source $LOCAL_BASHRC
+fi
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
