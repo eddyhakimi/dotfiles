@@ -4,7 +4,7 @@
 PATH="$PATH:~/dotfiles/bin"
 
 # fancier prompt
-PS1='\[\e[1;32m\][\[\e[1;36m\]\u@\h\[\e[m\]\[\e[1;32m\] \w ]\$ \[\e[m\]' 
+PS1='\[\e[1;32m\][\[\e[1;36m\]\u@\h\[\e[m\]\[\e[1;32m\] \W ]\$ \[\e[m\]' 
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
@@ -32,6 +32,7 @@ alias gla='git log --graph --oneline --all'
 alias gf='git fetch'
 alias gps='git push'
 alias gpl='git pull'
+alias tf='terraform'
 
 # set the keybindings to vi mode
 set -o vi
@@ -50,3 +51,14 @@ fi
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/gandalf21/applications/google-cloud-sdk/path.bash.inc' ]; then . '/home/gandalf21/applications/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/gandalf21/applications/google-cloud-sdk/completion.bash.inc' ]; then . '/home/gandalf21/applications/google-cloud-sdk/completion.bash.inc'; fi
+
