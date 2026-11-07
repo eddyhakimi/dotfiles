@@ -1,0 +1,40 @@
+#!/bin/bash
+printUsage() {
+  echo "Usage: check-ebook <ebook_file>"
+  exit 1
+}
+
+assertProceeding() {
+  read -p "Proceed with checking the ebook? (y/n) " -n 1
+  echo    # move to a new line
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+      echo "Aborting."
+      exit 1
+  fi
+  printf "\n\n"
+}
+
+if [ $# -ne 1 ]; then
+  printUsage
+  exit 1
+fi
+
+
+# anything odd? .exe, .js, .sh, huge files
+unzip -l "$1"                      
+assertProceeding
+
+# generate random directory to extract the ebook into
+target_directory=$(mktemp -d "${TMPDIR:-/tmp/}$(basename $0).XXXXXXXXXXXX")
+
+# check for suspicious content in the ebook
+unzip -d "$target_directory" "$1"
+grep -rniE '<script|javascript:|onload=|onerror=|<iframe' "$target_directory"
+assertProceeding
+
+# check for suspicious links in the ebook
+grep -rnoE 'https?://[^"'"'"' )]+' "$target_directory" | sort -u
+assertProceeding
+
+# print sha256sum of ebook file
+sha256sum "$1"
